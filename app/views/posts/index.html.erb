@@ -1,0 +1,16 @@
+<table class="table">
+    <tr>
+      <th>Title</th>
+      <th>Date</th>
+      <th>Content</th>
+      <th>Image</th>
+    </tr>    
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.title %> </td>
+        <td><%= post.created_at %> </td>
+        <td><%= post.content %> </td>
+        <td><%= post.link %> </td>
+      </tr>
+    <% end %>
+  </table>

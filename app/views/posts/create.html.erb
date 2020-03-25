@@ -1,0 +1,16 @@
+<% if @posts.errors.any? %>
+  <div id="error_explanation">
+    <h2>
+        No se pudo guardar por:
+    </h2>
+
+    <ul>
+    <% @posts.errors.full_messages.each do |mensaje| %>
+      <li><%= mensaje %></li>
+    <% end %>
+    </ul>
+  </div>
+  <%else%>
+  <h1> Post creado con éxito </h1>
+
+<% end %>
